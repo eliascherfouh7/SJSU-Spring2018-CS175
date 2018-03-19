@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/background"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/select_pic"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="500dp"
+                    android:layout_marginLeft="300dp"
+                    android:maxHeight="15dp"
+                    android:paddingBottom="15dp"
+                    android:src="@drawable/new_dish"
+                    android:id="@+id/add_pic"/>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Recipe name here"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="#ddd"
+            android:id="@+id/dish_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:id="@+id/ingredient_textview"/>
+
+
+        <com.caus_abdellah.whatfordinner.NonScrollListViewActivity
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add ingredient"
+            android:id="@+id/add_ingredient"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Directions"
+            android:id="@+id/directions_textview"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="15dp"
+            android:selectAllOnFocus="true"
+            android:inputType="textMultiLine|textCapSentences|textAutoComplete|textAutoCorrect"
+            android:hint="Recipe directions here"
+            android:textColorHint="#ddd"
+            android:maxLines="10"
+            android:maxHeight="200dp"
+            android:id="@+id/directions_text"
+            android:height="160dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Dish"
+            android:height="50dp"
+            android:id="@+id/save_dish_button"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

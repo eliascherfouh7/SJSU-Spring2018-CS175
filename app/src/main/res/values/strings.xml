@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Whats For Dinner</string>
+    <string name="title_activity_copyright_">copyright_activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo_of_recipe" />
+    <string name="back" />
+    <string-array name="spinnerItems">
+        <item>Pieces(pcs)</item>
+        <item>Pounds(lbs)</item>
+        <item>Ounces(oz)</item>
+        <item>Litres(L)</item>
+        <item>Dozens(Dz)</item>
+        <item>Grams(g)</item>
+    </string-array>
+</resources>
